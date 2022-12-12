@@ -11,27 +11,17 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-<div class="payment-title">
-    <h1>Boom Form Card</h1>
-    <div class="form-container">
-        <div class="input">
-            <label for="ccname">Name</label>
-            <input id="ccname" maxlength="20" type="text">
-        </div>
-        <div class="input">
-            <label for="cardnumber">Card Number</label>
-            <input id="cardnumber" type="text" pattern="[0-9]*" inputmode="numeric">
+<h1>
+    Boom Card Form
+</h1>
+<form>
+    <label>
+        <input type="text" name="ccname" placeholder="Name"/>
+        <input type="text" name="cardnumber" placeholder="Card Number"/>
+        <input type="text" name="cvc" placeholder="CVC"/>
+        <input type="text" name="cc-exp" placeholder="Expiration Date"/>
+    </label>
+</form>
 
-        </div>
-        <div class="input">
-            <label for="cc-exp">Expiration (mm/yy)</label>
-            <input id="cc-exp" type="text" pattern="[0-9]*" inputmode="numeric">
-        </div>
-        <div class="input">
-            <label for="cvc">Security Code</label>
-            <input id="cvc" type="text" pattern="[0-9]*" inputmode="numeric">
-        </div>
-    </div>
-</div>
 </body>
 </html>
