@@ -1,18 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8"/>
     <title>HTML, CSS and SASS Boilerplate</title>
     <meta
-      name="description"
-      content="Used as a boilerplate for tasks in the 'HTML, CSS and SASS' course in boom.dev"
+            name="description"
+            content="Used as a boilerplate for tasks in the 'HTML, CSS and SASS' course in boom.dev"
     />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <div class="main">
-      <div class="emoji mb-6">💣🤯💥</div>
-      <button class="button">Boom?</button>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div class="payment-title">
+    <h1>Boom Form Card</h1>
+    <div class="form-container">
+        <div class="input">
+            <label for="ccname">Name</label>
+            <input id="ccname" maxlength="20" type="text">
+        </div>
+        <div class="input">
+            <label for="cardnumber">Card Number</label>
+            <input id="cardnumber" type="text" pattern="[0-9]*" inputmode="numeric">
+
+        </div>
+        <div class="input">
+            <label for="cc-exp">Expiration (mm/yy)</label>
+            <input id="cc-exp" type="text" pattern="[0-9]*" inputmode="numeric">
+        </div>
+        <div class="input">
+            <label for="cvc">Security Code</label>
+            <input id="cvc" type="text" pattern="[0-9]*" inputmode="numeric">
+        </div>
     </div>
-  </body>
+</div>
+</body>
 </html>
