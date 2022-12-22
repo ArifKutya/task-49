@@ -14,15 +14,33 @@
 <h1>
     Boom Card Form
 </h1>
-<form autocomplete="on">
-    <label for="ccname">Name</label>
-    <input name="ccname" type="text" id="ccname" placeholder="Name">
-    <label for="cardnumber">Card Number</label>
-    <input name="cardnumber" type="number" id="cardnumber" placeholder="Card Number">
-    <label for="cvc">CVC</label>
-    <input name="cvc" type="number" id="cvc">
-    <label for="cc-exp">Expiration Date</label>
-    <input name="cc-exp" type="number" id="cc-exp" placeholder="Expiration Date">
+<form action="">
+    <div class="container">
+    <div class="inputBox">
+        <spa>card number</spa>
+        <label>
+            <input type="text" maxlength="16" name="cardnumber" class="input" >
+        </label>
+    </div>
+    <div class="inputBox">
+        <spa>card cardholder</spa>
+        <label>
+            <input type="text"  name="ccname" class="input">
+        </label>
+    </div>
+    <div class="inputBox">
+        <spa>expiration date</spa>
+        <label>
+            <input type="text"  name="cc-exp" class="input"  >
+        </label>
+    </div>
+    <div class="inputBox">
+        <spa>cvc</spa>
+        <label>
+            <input type="number" maxlength="3" name="ccname" class="input">
+        </label>
+    </div>
+    </div>
 </form>
 </body>
 </html>
